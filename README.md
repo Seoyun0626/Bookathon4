@@ -36,14 +36,22 @@ Book(책)과 Hackathon(해커톤)의 합성어로 인간과 AI가 협업하여 �
 ## 2. Data Preprocessing Strategy
     대회 키워드를 알기 전에는 브런치(감성 ESSAY), 신춘문예, 글틴에서 크롤링 대회 키워드를 알고 난 후는 주제에 적합한 데이터 추가적 크롤링
     크롤링한 데이터(.txt)를 파일 형식 변환 후(.json) 정규화 표현을 이용한 기계전처리 후 세밀한 전처리를 위해 사람 전처리 과정을 통하여 데이터 정제
-    ![데이터 전처리]("https://user-images.githubusercontent.com/104416283/213632907-26d485e7-a044-4b31-b58f-78facfe19ac2.PNG")
+    ![데이터 전처리](https://user-images.githubusercontent.com/104416283/213632907-26d485e7-a044-4b31-b58f-78facfe19ac2.PNG)
+    ![.txt -> .json 형식변환](https://user-images.githubusercontent.com/104416283/213633422-38fa96d3-3cf4-444c-aa85-6e53a64a042b.PNG)
 
 
 ## 3. Model Training Strategy
     마인즈랩에서 제공하는 사전학습된 GPT3 모델을 사용하는 대신, EleutherAI/polyglot-ko-1.3b5를 한 번 더 사전학습을 진행한 후 
     fine-tuning 하는 방법으로 생성 모델을 학습
+    ![모델 학습](https://user-images.githubusercontent.com/104416283/213633570-19530ccc-1e7b-4a86-b16d-4859642c4a3c.PNG)
 
-    이 외에도 GPU 메모리 확보를 위해 추가적인 전략(모델의 일부를 Freezing + 파라미터 조정)
+    GPU 메모리 확보를 위한 전략
+    1. Gradient Checkpointing
+    2. 8-bit optimizer
+    3. Gradient Accumulation
+    4. Mixed/Half precision
+    ![GPU메모리 확보 전략](https://user-images.githubusercontent.com/104416283/213633577-15a490e2-57a7-432c-a66d-7f27549d5799.PNG)
+    
 
 
 ## 4. Model Inference Strategy
