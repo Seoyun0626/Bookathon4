@@ -18,6 +18,11 @@ Book(책)과 Hackathon(해커톤)의 합성어로 인간과 AI가 협업하여 �
 ### Team 당당!
 # 👀 팀 소개-
 
+* **김서윤** - *Data Preprocess + Writing* - (tjdbs0626@gmail.com)
+* **김효정** - *Data Crawling + Writing* - (hyojeong9888@gmail.com)
+* **이상민** - *Fine-Tuning + Model Training* - (l.alex6095@gmail.com)
+* **이창훈** - *Writing* - (rheasis0115@gmail.com)
+
 ### 1️⃣ 프로젝트 소개
 
 
