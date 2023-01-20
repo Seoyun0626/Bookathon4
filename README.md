@@ -39,7 +39,8 @@ Book(책)과 Hackathon(해커톤)의 합성어로 인간과 AI가 협업하여 �
 
 
 ## 3. Model Training Strategy
-    마인즈랩에서 제공하는 사전학습된 GPT3 모델을 사용하는 대신, EleutherAI/polyglot-ko-1.3b5를 한 번 더 사전학습을 진행한 후 fine-tuning 하는 방법으로 생성 모델을 학습
+    마인즈랩에서 제공하는 사전학습된 GPT3 모델을 사용하는 대신, EleutherAI/polyglot-ko-1.3b5를 한 번 더 사전학습을 진행한 후 
+    fine-tuning 하는 방법으로 생성 모델을 학습
 
     이 외에도 GPU 메모리 확보를 위해 추가적인 전략(모델의 일부를 Freezing + 파라미터 조정)
 
