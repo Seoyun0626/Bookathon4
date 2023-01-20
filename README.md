@@ -1,4 +1,4 @@
-# 2021 SKKU AI x Bookathon 4rd
+# 💻2021 SKKU AI x Bookathon 4rd📚
 
 
 ## 1. Introduction
