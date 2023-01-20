@@ -36,8 +36,8 @@ Book(책)과 Hackathon(해커톤)의 합성어로 인간과 AI가 협업하여 �
 ## 2. Data Preprocessing Strategy
     대회 키워드를 알기 전에는 브런치(감성 ESSAY), 신춘문예, 글틴에서 크롤링 대회 키워드를 알고 난 후는 주제에 적합한 데이터 추가적 크롤링
     크롤링한 데이터(.txt)를 파일 형식 변환 후(.json) 정규화 표현을 이용한 기계전처리 후 세밀한 전처리를 위해 사람 전처리 과정을 통하여 데이터 정제
-    <img width="589" alt="데이터 전처리" src="https://user-images.githubusercontent.com/104416283/213634056-23e5e4f3-a023-4442-97a5-6af4d3523317.PNG">
-    <img width="584" alt="제이슨 파일 전환" src="https://user-images.githubusercontent.com/104416283/213633422-38fa96d3-3cf4-444c-aa85-6e53a64a042b.PNG">
+    <img src="https://user-images.githubusercontent.com/104416283/213634056-23e5e4f3-a023-4442-97a5-6af4d3523317.PNG">
+    <img src="https://user-images.githubusercontent.com/104416283/213633422-38fa96d3-3cf4-444c-aa85-6e53a64a042b.PNG">
 
 
 ## 3. Model Training Strategy
