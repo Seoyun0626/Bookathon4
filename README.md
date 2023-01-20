@@ -35,21 +35,21 @@ Book(책)과 Hackathon(해커톤)의 합성어로 인간과 AI가 협업하여 �
 
 ## 2. Data Preprocessing Strategy
     대회 키워드를 알기 전에는 브런치(감성 ESSAY), 신춘문예, 글틴에서 크롤링 대회 키워드를 알고 난 후는 주제에 적합한 데이터 추가적 크롤링
-    ![데이터 전처리](https://user-images.githubusercontent.com/104416283/213635687-a417896e-7d07-4c11-a9d1-638900693540.jpg)
+![데이터 전처리](https://user-images.githubusercontent.com/104416283/213635687-a417896e-7d07-4c11-a9d1-638900693540.jpg)
     크롤링한 데이터(.txt)를 파일 형식 변환 후(.json) 정규화 표현을 이용한 기계전처리 후 세밀한 전처리를 위해 사람 전처리 과정을 통하여 데이터 정제
-    ![제이슨 파일 전환](https://user-images.githubusercontent.com/104416283/213635678-afe14182-332c-4b01-b08f-131e4957f57f.jpg)
+![제이슨 파일 전환](https://user-images.githubusercontent.com/104416283/213635678-afe14182-332c-4b01-b08f-131e4957f57f.jpg)
 
 ## 3. Model Training Strategy
     마인즈랩에서 제공하는 사전학습된 GPT3 모델을 사용하는 대신, EleutherAI/polyglot-ko-1.3b5를 한 번 더 사전학습을 진행한 후 
     fine-tuning 하는 방법으로 생성 모델을 학습
-    ![모델 학습](https://user-images.githubusercontent.com/104416283/213635688-2ef622fc-76f3-4f2a-9f29-f3cd9a93f599.jpg)
+![모델 학습](https://user-images.githubusercontent.com/104416283/213635688-2ef622fc-76f3-4f2a-9f29-f3cd9a93f599.jpg)
 
     GPU 메모리 확보를 위한 전략
     1. Gradient Checkpointing
     2. 8-bit optimizer
     3. Gradient Accumulation
     4. Mixed/Half precision
-    ![GPU메모리 확보 전략](https://user-images.githubusercontent.com/104416283/213635479-67c61aa8-ecf4-4dff-a370-3a116a777662.jpg)
+![GPU메모리 확보 전략](https://user-images.githubusercontent.com/104416283/213635479-67c61aa8-ecf4-4dff-a370-3a116a777662.jpg)
     
 
 
